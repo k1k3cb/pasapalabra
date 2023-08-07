@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>PASAPALABRA GAME</title>
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@400;700&display=swap"
+			rel="stylesheet"
+		/>
+		<link rel="stylesheet" href="css/normalize.css" />
+		<link rel="stylesheet" href="css/styles.css" />
+	</head>
+	<body>
+		<h1 class="title">PASAPALABRA GAME</h1>
+
+		<div class="circle-container">
+			<div class="game-data" id="game-data">
+				<div class="timer"><p>Tiempo restante: <span id="time-left"></span></p></div>
+				<div class="fallos">
+					<p>Vidas restantes:</p>
+					
+
+					<div class="hearts-container" id="hearts-container">
+						<img src="assets/images/heart.png" alt="Heart" class="heart-icon" />
+						<img src="assets/images/heart.png" alt="Heart" class="heart-icon" />
+						<img src="assets/images/heart.png" alt="Heart" class="heart-icon" />
+					</div>
+				</div>
+			</div>
+			<div class="circle" id="circle">
+				<div class="letter">A</div>
+				<div class="letter">B</div>
+				<div class="letter">C</div>
+				<div class="letter">D</div>
+				<div class="letter">E</div>
+				<div class="letter">F</div>
+				<div class="letter">G</div>
+				<div class="letter">H</div>
+				<div class="letter">I</div>
+				<div class="letter">J</div>
+				<div class="letter">K</div>
+				<div class="letter">L</div>
+				<div class="letter">M</div>
+				<div class="letter">N</div>
+				<div class="letter">Ñ</div>
+				<div class="letter">O</div>
+				<div class="letter">P</div>
+				<div class="letter">Q</div>
+				<div class="letter">R</div>
+				<div class="letter">S</div>
+				<div class="letter">T</div>
+				<div class="letter">U</div>
+				<div class="letter">V</div>
+				<div class="letter">W</div>
+				<div class="letter">X</div>
+				<div class="letter">Y</div>
+				<div class="letter">Z</div>
+			</div>
+		</div>
+		<div class="question-container" id="question-container">
+			<h2 id="pregunta-title">PREGUNTA:</h2>
+			<p class="letter-used" id="letter-used"></p>
+			<p class="question" id="question"></p>
+		</div>
+
+		<div  id="user-form">
+			<input
+				type="text"
+				name=""
+				id="text-input"
+				class="form-input"
+				placeholder="Introducir palabra"
+			/>
+			<button class="form-btn" id="pasapalabra-btn">Pasapalabra</button>
+		</div>
+
+		<script src="js/scripts.js" type="module"></script>
+	</body>
+</html>
